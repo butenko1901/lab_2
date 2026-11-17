@@ -3,8 +3,6 @@ using ScientistsLab.Models;
 
 namespace ScientistsLab.Strategies
 {
-    // SAX API. У C# аналог SAX - це XmlReader:
-    // він читає файл послідовно, вузол за вузлом, не завантажуючи весь файл у пам'ять.
     public class SaxSearchStrategy : ISearchStrategy
     {
         public List<Scientist> Search(string filePath, SearchFilter filter)
