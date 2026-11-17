@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Варіант 16. "Кадри науковців (Звання)" -->
+<!-- У різних вузлів Scientist різна кількість атрибутів (не всі мають ступінь чи звання) -->
+<Scientists>
+  <Scientist FullName="Іваненко Петро Олександрович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра інформаційних систем" Degree="Доктор наук" Title="Професор">
+    <DegreeInfo Speciality="Інформаційні технології" Date="2010-05-14" />
+    <TitleInfo Date="2013-09-01" />
+  </Scientist>
+
+  <Scientist FullName="Коваленко Олена Сергіївна" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра теорії та технології програмування" Degree="Кандидат наук" Title="Доцент">
+    <DegreeInfo Speciality="Математичне моделювання" Date="2015-11-20" />
+    <TitleInfo Date="2019-02-15" />
+  </Scientist>
+
+  <Scientist FullName="Шевчук Андрій Миколайович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра інформаційних систем">
+  </Scientist>
+
+  <Scientist FullName="Бондаренко Марія Іванівна" Faculty="Механіко-математичний факультет" Department="Кафедра алгебри та комп'ютерної математики" Degree="Кандидат наук">
+    <DegreeInfo Speciality="Алгебра" Date="2021-06-30" />
+  </Scientist>
+
+  <Scientist FullName="Мельник Ігор Васильович" Faculty="Механіко-математичний факультет" Department="Кафедра математичного аналізу" Degree="Доктор наук" Title="Професор">
+    <DegreeInfo Speciality="Математичний аналіз" Date="2005-03-10" />
+    <TitleInfo Date="2008-12-01" />
+  </Scientist>
+
+  <Scientist FullName="Ткаченко Наталія Петрівна" Faculty="Фізичний факультет" Department="Кафедра теоретичної фізики" Degree="Кандидат наук" Title="Старший дослідник">
+    <DegreeInfo Speciality="Теоретична фізика" Date="2012-10-05" />
+    <TitleInfo Date="2017-04-22" />
+  </Scientist>
+
+  <Scientist FullName="Кравченко Олег Дмитрович" Faculty="Фізичний факультет" Department="Кафедра оптики" Degree="Кандидат наук" Title="Доцент">
+    <DegreeInfo Speciality="Оптика" Date="2011-01-18" />
+    <TitleInfo Date="2014-06-10" />
+  </Scientist>
+
+  <Scientist FullName="Олійник Юлія Андріївна" Faculty="Фізичний факультет" Department="Кафедра оптики">
+  </Scientist>
+</Scientists>

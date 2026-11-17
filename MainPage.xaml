@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScientistsLab.MainPage"
+             Title="Кадри науковців (Звання)">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+
+            <!-- Вибір файлу -->
+            <Button Text="Відкрити XML-файл" Clicked="OnOpenFileClicked" />
+            <Label x:Name="FileLabel" Text="Файл не вибрано" />
+
+            <!-- Параметри пошуку -->
+            <Label Text="П.І.П. (ключове слово):" />
+            <Entry x:Name="NameEntry" Placeholder="Наприклад: Іван" />
+
+            <Label Text="Факультет:" />
+            <Picker x:Name="FacultyPicker" />
+
+            <Label Text="Кафедра:" />
+            <Picker x:Name="DepartmentPicker" />
+
+            <Label Text="Науковий ступінь:" />
+            <Picker x:Name="DegreePicker" />
+
+            <Label Text="Вчене звання:" />
+            <Picker x:Name="TitlePicker" />
+
+            <!-- Вибір стратегії -->
+            <Label Text="Спосіб аналізу:" />
+            <HorizontalStackLayout Spacing="15">
+                <RadioButton x:Name="SaxRadio" Content="SAX API" IsChecked="True" GroupName="Method" />
+                <RadioButton x:Name="DomRadio" Content="DOM API" GroupName="Method" />
+                <RadioButton x:Name="LinqRadio" Content="LINQ to XML" GroupName="Method" />
+            </HorizontalStackLayout>
+
+            <!-- Кнопки -->
+            <HorizontalStackLayout Spacing="10">
+                <Button Text="Пошук" Clicked="OnSearchClicked" />
+                <Button Text="Трансформувати в HTML" Clicked="OnTransformClicked" />
+                <Button Text="Clear" Clicked="OnClearClicked" />
+                <Button Text="Вихід" Clicked="OnExitClicked" />
+            </HorizontalStackLayout>
+
+            <!-- Поле виводу -->
+            <Label Text="Результат:" />
+            <Editor x:Name="OutputEditor" IsReadOnly="True" HeightRequest="350" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
